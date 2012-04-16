@@ -1,0 +1,226 @@
+@charset "utf-8";
+.box1-wrap {
+	/* [disabled]background-color: #CCC; */
+	float: left;
+	height: auto;
+	width: 500px;
+	font-size: 13px;
+	margin-left: 25px;
+	}
+.box1-head {
+	/* [disabled]color: #FFF; */
+	/* [disabled]background-color: #963; */
+	padding: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 480px;
+	}
+.page-wrap {
+	height: auto;
+	width: 960px;
+	float: none;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.page-header-wrap {
+	height: 74px;
+	width: 930px;
+	float: left;
+	font-size: 25px;
+	text-align: left;	/*background-color: #FC6;
+	color: #FFF;*/
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 1px;
+	padding-left: 15px;
+}
+.page-content-wrap {
+	float: left;
+	height: auto;
+	width: 960px;
+	position: static;
+	font-size: 13px;
+	padding-bottom: 10px;
+	border-bottom-width: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: #c0c0c0;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	padding-top: 10px;
+}
+.breadcrumb-wrap {
+	float: left;
+	height: 24px;
+	width: 955px;
+	font-size: 12px;
+	text-align: right;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #666;
+	padding-top: 3px;
+	padding-right: 5px;
+}
+.page-head-dropmenu-wrap {
+	height: auto;
+	width: 960px;
+}
+.page-content-header {
+	width: 500px;
+	margin: 0px;
+	float: left;
+	padding-top: 27px;
+	padding-right: 0px;
+	padding-bottom: 27px;
+	padding-left: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.drop-menu-wrap {
+	height: auto;
+	width: 400px;
+	padding-top: 15px;
+	float: right;
+	text-align: right;
+	padding-right: 14px;
+}
+.graph-iframe-wrap {
+	float: left;
+	width: 960px;
+	height: auto;
+}
+.user-info-wrap {
+	float: right;
+	width: auto;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: right;
+	line-height: 20px;
+}
+.user-info-wrap a {
+	text-decoration: underline;
+}
+.user-info-wrap a:Hover {
+	text-decoration: underline;
+}
+.logo-wrap {
+	float: left;
+}
+.navigation-wrap {
+	float: left;
+	height: 39px;
+	width: 957px;
+	position: relative;
+	margin-left:1px;
+}
+.nav-bg-color {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 39px;
+	width: 957px;
+	z-index: 1;
+	-webkit-box-shadow: #666 0px 0px 2px;
+	-moz-box-shadow: #666 0px 0px 2px;
+	box-shadow: #666 0px 0px 2px;
+	behavior: url(../js/PIE.htc);
+}
+.tab-wrap {
+	height: 40px;
+	width: 100%;
+	clear: left;
+}
+.tab-wrap a {
+	display: block;
+	padding: 6px;
+	float: left;
+	margin-right: 5px;
+}
+.news-wrap {
+	width: 940px;
+	float: left;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 25px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	color: #666;
+}
+.login-left-para-form-wrap {
+	float: left;
+	width: 960px;
+	padding-top: 55px;
+}
+.login-left-para-wrap {
+	float: left;
+	height: auto;
+	width: 250px;
+	font-size: 12px;
+	text-align: left;
+	padding: 25px;
+	color: #666;
+}
+.login-form-wrap {
+	float: left;
+	background-image: url(../images/login-image.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: auto;
+	width: 360px;
+	padding-left: 192px;
+}
+.login-form-head {
+	font-size: 35px;
+	color: #1d3784;
+}
+.form-txt-field {
+	font-size: 13px;
+	color: #999;
+	border: 1px solid #CCC;
+	padding: 3px;
+}
+.login-bt {
+	background-color: #ee4338;
+	background-image: none;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	font-size: 13px;
+	padding: 3px;
+	margin: 0px;
+	float: right;
+}
+.login-bt:hover {
+	color: #333333;
+	text-decoration: none;
+	cursor:pointer;
+}

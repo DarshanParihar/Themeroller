@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>:: Birds Eye ::</title>
+
+<!--Base Css-->
+<link type="text/css" href="themes/base/jquery.ui.core.css" rel="stylesheet" />
+<link type="text/css" href="themes/base/jquery.ui.base.css" rel="stylesheet" />
+<!--/Base Css-->
+
+<!--Custome Css-->
+<link type="text/css" href="themes/custome-theme/jquery-ui.custom.css" rel="stylesheet" />
+<!--/Custome Css-->
+
+<!--Page Css-->
+<link href="css/birdseye-base.css" rel="stylesheet" type="text/css">
+<!--/Page Css-->
+
+<!--Jquery Library-->   
+<script src="jquery-1.7.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<!--/Jquery Library-->   
+
+<!--Theme Roller Script-->
+<script src="developertool.js" type="text/javascript"></script>
+<!--/Theme Roller Script-->
+
+<!--Menu Hover Script-->
+<script type="text/javascript">
+	$(function(){
+		$('.ui-state-default').hover(
+			function(){$(this).addClass('ui-state-hover');},
+			function(){$(this).removeClass('ui-state-hover');}
+		)
+		.mousedown(function(){$(this).addClass('ui-state-active');})
+		.mouseup(function(){$(this).removeClass('ui-state-active');})
+		.mouseout(function(){$(this).removeClass('ui-state-active');});		
+	});
+</script>
+<!--/Menu Hover Script-->
+
+<!--Menu Script Start-->
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+<script type="text/javascript">
+ddsmoothmenu.init({
+	mainmenuid: "smoothmenu1", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+<!--Menu Script End-->
+
+<!--Tab Script-->   
+<link rel="stylesheet" type="text/css" href="css/tabcontent.css" />
+<script type="text/javascript" src="js/tabcontent.js">
+</script>
+<!--Tab Script-->    
+
+</head>
+
+<body>  
+<!--Main Div Start-->
+<div class="ui-widget page-wrap">
+
+    <!--Page Header-->
+    <div class="ui-widget-header page-header-wrap" style="background-color:#fff;"> 
+      <div class="logo-wrap">
+          <img src="images/logo-birds-eye.png" width="135" height="62" alt="Logo" />
+      </div>
+      <div class="user-info-wrap">
+        <div class="user-info-top-border"> Welcome User name</div>
+        <a href="#">My Profile</a> | <a href="#">Log Out</a></div>
+    </div>
+    <!--/Page Header-->
+
+    <!--Navigation wrap-->
+    <div class="navigation-wrap">
+    	<div class="ui-state-default nav-bg-color" style="float:left; width:100%; border:none;">
+        </div>
+        
+        <div id="smoothmenu1" class="ddsmoothmenu">
+        <ul style="height:34px;">
+        <li><a href="#" class="ui-state-default" style="border-top:none; 
+        border-bottom:none;">Plan Review Promotions</a>
+            <ul style="width:222px;">
+            <li><a href="index.html" onClick="javascript: countries.expandit(0)"
+             class="ui-state-default" style="width:192px;"> Promo Search </a>
+            <li><a href="index.html" onClick="javascript: countries.expandit(1)"
+            class="ui-state-default" style="width:192px;"> Scenario Modeller </a>
+            <li><a href="index.html" onClick="javascript: countries.expandit(2)"
+            class="ui-state-default" id="last-ddmenu" style="width:192px;"> Evaluator </a>
+            </ul>
+        </li>
+        <li><a href="#" class="ui-state-default"  style="border-top:none; border-bottom:none;">Annual Plan</a>
+        	<ul style="width:182px;">
+            <li><a href="annual-Plan.html" onClick="javascript: countries.expandit(0)" 
+            class="ui-state-default"  style="width:152px;"> Marketing Calendar </a></li>
+            <li><a href="annual-Plan.html" onClick="javascript: countries.expandit(1)"
+             class="ui-state-default"  style="width:152px;"> Guiderails </a></li>
+            <li><a href="annual-Plan.html" onClick="javascript: countries.expandit(2)"
+             class="ui-state-default"  style="width:152px;"> My Calendar </a></li>
+            <li><a href="annual-Plan.html" onClick="javascript: countries.expandit(3)"
+             class="ui-state-default" id="last-ddmenu"  style="width:152px;"> Budget Tracker </a></li>
+            </ul>
+        </li>
+    <li><a href="#" class="ui-state-default"  style="border-top:none; border-bottom:none;">Output Reports</a>
+	    	<ul>
+            <li><a href="output-reports.html" onClick="javascript: countries.expandit(0)"
+            class="ui-state-default"> Demand Planning </a></li>
+            <li><a href="output-reports.html" onClick="javascript: countries.expandit(1)"
+             class="ui-state-default"> Field Sales </a></li>
+            <li><a href="output-reports.html" onClick="javascript: countries.expandit(2)"
+             class="ui-state-default"> Escalation </a></li>
+            <li><a href="output-reports.html" onClick="javascript: countries.expandit(3)" 
+            class="ui-state-default"> Customer Proposal </a></li>
+            <li><a href="output-reports.html" onClick="javascript: countries.expandit(4)" 
+            class="ui-state-default" id="last-ddmenu"> Satus Summary </a></li>
+            </ul>
+    </li>
+     <li><a href="#" class="ui-state-default"  style="border-top:none; border-bottom:none; background-color:#8bd401; color:#FFF;">HELP</a>
+        	<ul>
+            <li><a href="help.html" onClick="javascript: countries.expandit(0)"
+             class="ui-state-default"> Search </a></li>
+            <li><a href="help.html" onClick="javascript: countries.expandit(1)"
+             class="ui-state-default" id="last-ddmenu"> User Guide </a></li>            
+            </ul>
+        </li>
+        </ul>
+        <br style="clear: left" />
+        </div>
+    </div>
+    <!--/Navigation wrap--> 
+              
+    <!--Tab content wrap-->         
+    <div class="page-content-wrap">
+    
+    	<!--Tab Head-->
+        <ul id="countrytabs" class="shadetabs" style="margin-left:394px;">
+        <li><a href="#" rel="country1"  class="selected">Search</a></li>
+        <li><a href="#" rel="country2"> User Guide</a></li>
+        <li style="display:none"><a href="#" rel="country3"></a></li>
+        <li style="display:none"><a href="#" rel="country4"></a></li>
+        <li style="display:none"><a href="#" rel="country5"></a></li>
+        </ul>
+    	<!--/Tab Head-->    
+        
+        <!--Tab Content-->
+        <div class="custom-tab-wrap">
+        
+        <div id="country1" class="tabcontent">
+        <iframe src="graph1.html" width="960px" height="399px" scrolling="yes" frameborder="0">
+        </iframe>
+        </div>
+        
+        <div id="country2" class="tabcontent">
+        <iframe src="graph2.html" width="960px" height="399px" scrolling="yes" frameborder="0">
+        </iframe>
+        </div>
+        
+        <div id="country3" class="tabcontent"></div>
+        <div id="country4" class="tabcontent"></div>
+        <div id="country5" class="tabcontent"></div>
+        
+        </div>
+        <!--/Tab Content-->
+        
+    	<!--Tab Script-->
+		<script type="text/javascript">
+        var countries=new ddtabcontent("countrytabs")
+        countries.setpersist(true)
+        countries.setselectedClassTarget("link") //"link" or "linkparent"
+        countries.init()
+        </script>
+    	<!--/Tab Script-->        
+        
+    </div>
+    <!--/Tab content wrap-->
+
+</div>
+<!--Main Div End-->
+</body>
+</html>
